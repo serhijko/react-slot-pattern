@@ -1,9 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Greeting extends Component {
-  render() {
-    return <h1 className="App-header">{this.props.greeting}</h1>
-  }
-}
+const Greeting = (props) => <h1 className="App-header">{props.greeting}</h1>;
 
 export default Greeting;
