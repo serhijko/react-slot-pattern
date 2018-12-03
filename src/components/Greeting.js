@@ -1,6 +1,5 @@
 import React from 'react';
 
-const Greeting = ({ greeting, isShow }) =>
-  isShow ? <h1 className="App-header">{greeting}</h1> : null;
+const Greeting = ({ greeting }) => <h1>{greeting}</h1>;
 
 export default Greeting;
