@@ -5,11 +5,9 @@ import Greeting from './components/Greeting';
 
 class App extends Component {
   render() {
-    const greeting = 'Welcome to React';
-    
     return (
       <div className="App">
-        <Greeting greeting={greeting} />
+        <Greeting greeting="Welcome to React" />
       </div>
     );
   }
