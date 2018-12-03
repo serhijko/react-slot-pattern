@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Greeting greeting="Welcome to React" />
+        <Greeting greeting={{ text: 'Welcome to React' }} />
       </div>
     );
   }
