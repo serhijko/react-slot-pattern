@@ -22,7 +22,7 @@ class App extends Component {
     
     return (
       <div className="App">
-        {this.state.isShow ? <Greeting greeting={greeting} /> : null}
+        <Greeting greeting={greeting} isShow={this.state.isShow} />
 
         <Button onClick={this.toggleShow} />
       </div>
