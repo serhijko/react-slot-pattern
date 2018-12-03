@@ -1,25 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Button extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isShow: true,
-    };
-  }
-
-  toggleShow = () => {
-    this.setState(state => ({ isShow: !state.isShow }));
-  };
-
-  render() {
-    return (
-      <button onClick={this.toggleShow} type="button">
-        Toggle Show
-      </button>
-    );
-  }
-}
+const Button = ({ onClick }) => (
+  <button onClick={onClick} type="button">
+    Toggle Show
+  </button>
+);
 
 export default Button;
