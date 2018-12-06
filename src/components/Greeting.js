@@ -2,10 +2,17 @@ import React from 'react';
 import Title from './Title';
 import Description from './Description';
 
-const Greeting = ({ greeting }) =>
+const Greeting = ({
+  subject,
+  description,
+  logo
+}) =>
   <div>
-    <Title title={`Welcome to ${greeting.subject}`} />
-    <Description description={greeting.description} />
+    <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+    </header>
+    <Title title={`Welcome to ${subject}`} />
+    <Description description={description} />
   </div>
 
 export default Greeting;
