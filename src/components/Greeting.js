@@ -2,10 +2,10 @@ import React from 'react';
 import Title from './Title';
 import Description from './Description';
 
-const Greeting = ({ subject, description }) =>
+const Greeting = ({ subject, ...other }) =>
   <div>
     <Title title={`Welcome to ${subject}`} />
-    <Description description={description} />
+    <Description {...other} />
   </div>
 
 export default Greeting;
