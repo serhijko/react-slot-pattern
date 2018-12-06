@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Profile = ({ user, children }) => (
+const Profile = ({ user, avatar, biography }) => (
   <div className="profile">
-    <div>{children}</div>
+    <div>{avatar}</div>
     <div>
       <p>{user.name}</p>
+      {biography}
     </div>
   </div>
 );
