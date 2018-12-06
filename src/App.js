@@ -1,32 +1,18 @@
 import React, { Component } from 'react';
 
+import logo from './logo.svg';
 import './App.css';
-import Greeting from './components/Greeting';
-import Button from './components/Button';
+import User from './components/User';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isShow: true,
-    };
-  }
-
-  toggleShow = () => {
-    this.setState(state => ({ isShow: !state.isShow }));
-  };
-
   render() {
-    const greeting = 'Welcome to React';
+    const user = {
+      name: 'Serhij Korneluk',
+      biography: 'Software Engineer ...',
+      avatarUrl: logo,
+    };
     
-    return (
-      <div className="App">
-        <Greeting greeting={greeting} isShow={this.state.isShow} />
-
-        <Button onClick={this.toggleShow}>Toggle Show</Button>
-      </div>
-    );
+    return <User user={user} />;
   }
 }
 
